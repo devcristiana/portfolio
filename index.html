@@ -1,17 +1,17 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Cristiana Cachoeira — Portfólio</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&family=Work+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
   :root {
-    --beige: #FBB45E;
-    --beige-card: #C99379;
+    --beige: #C99379;
+    --beige-card: #7D7585;
 
     --moss: #353B56;
     --moss-deep: #251211;
@@ -19,15 +19,15 @@
     --brown: #251211;
     --brown-soft: #7D7585;
 
-    --orange: #FBB45E;
+    --orange: #C8753D;
     --line: #C99379;
 
     --ink: #251211;
     --ink-card: #353B56;
     --ink-line: #7D7585;
 
-    --cream: #FBB45E;
-    --cream-soft: #7D7585;
+    --cream: #F5E8DF;
+    --cream-soft: #C99379;
   }
 
   * {
@@ -60,7 +60,7 @@
   nav {
     position: sticky;
     top: 0;
-    background: rgba(37, 18, 17, 0.94);
+    background: rgba(37, 18, 17, 0.95);
     backdrop-filter: blur(6px);
     z-index: 50;
   }
@@ -127,7 +127,7 @@
 
   .lang-switch {
     display: flex;
-    border: 1px solid rgba(251, 180, 94, 0.35);
+    border: 1px solid rgba(245, 232, 223, 0.35);
     border-radius: 999px;
     overflow: hidden;
   }
@@ -219,7 +219,7 @@
     gap: 24px;
     margin: 24px 0 30px;
     padding-top: 18px;
-    border-top: 1px solid rgba(251, 180, 94, 0.2);
+    border-top: 1px solid rgba(245, 232, 223, 0.18);
     max-width: 440px;
   }
 
@@ -228,7 +228,7 @@
   }
 
   .hero-stats .stat + .stat {
-    border-left: 1px solid rgba(251, 180, 94, 0.2);
+    border-left: 1px solid rgba(245, 232, 223, 0.18);
     padding-left: 24px;
   }
 
@@ -256,7 +256,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--orange);
-    border: 1px solid rgba(251, 180, 94, 0.45);
+    border: 1px solid rgba(200, 117, 61, 0.5);
     border-radius: 999px;
     padding: 6px 14px;
     margin-bottom: 22px;
@@ -278,15 +278,10 @@
     margin: 0 0 18px;
   }
 
-  /*
-    Espaçamento maior entre:
-    "Cristiana Cachoeira"
-    e
-    "nutricionista & dev em formação"
-  */
+  /* Espaço maior entre o nome e a profissão */
   h1.hero-title .serif-swap {
     display: inline-block;
-    margin-top: 18px;
+    margin-top: 20px;
   }
 
   h1.hero-title .accent {
@@ -330,7 +325,7 @@
   }
 
   .btn-outline-dark {
-    border-color: rgba(251, 180, 94, 0.4);
+    border-color: rgba(245, 232, 223, 0.4);
     color: var(--cream);
   }
 
@@ -349,7 +344,7 @@
     color: var(--orange);
   }
 
-  /* SIGNATURE: portrait */
+  /* FOTO */
   .portrait-wrap {
     display: flex;
     justify-content: center;
@@ -364,6 +359,7 @@
     object-fit: cover;
     border: 6px solid var(--ink-card);
     position: relative;
+    display: block;
   }
 
   /* ABOUT */
@@ -377,7 +373,7 @@
     margin: 0 0 16px;
   }
 
-  /* EXPERIENCIA - dark timeline */
+  /* EXPERIENCIA */
   .timeline {
     position: relative;
     padding-left: 28px;
@@ -575,10 +571,18 @@
 
     <div class="nav-right">
       <ul class="nav-links">
-        <li><a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a></li>
-        <li><a href="#experiencia" data-pt="Experiência" data-en="Experience">Experiência</a></li>
-        <li><a href="#projetos" data-pt="Projetos" data-en="Projects">Projetos</a></li>
-        <li><a href="#contato" data-pt="Contato" data-en="Contact">Contato</a></li>
+        <li>
+          <a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a>
+        </li>
+        <li>
+          <a href="#experiencia" data-pt="Experiência" data-en="Experience">Experiência</a>
+        </li>
+        <li>
+          <a href="#projetos" data-pt="Projetos" data-en="Projects">Projetos</a>
+        </li>
+        <li>
+          <a href="#contato" data-pt="Contato" data-en="Contact">Contato</a>
+        </li>
       </ul>
 
       <div class="lang-switch">
@@ -595,6 +599,7 @@
 
   <div class="wrap hero-inner">
     <div>
+
       <div
         class="eyebrow-tag"
         data-pt="&lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;Disponível para novos projetos"
@@ -623,6 +628,7 @@
       </p>
 
       <div class="hero-stats">
+
         <div class="stat">
           <div
             class="stat-label"
@@ -658,6 +664,7 @@
             Residência em Saúde Mental, SP
           </div>
         </div>
+
       </div>
 
       <div class="hero-ctas">
@@ -679,14 +686,13 @@
           LinkedIn
         </a>
       </div>
+
     </div>
 
     <div class="portrait-wrap reveal">
-      <div class="portrait-ring"></div>
-
       <img
         class="portrait"
-        src="https://media.licdn.com/dms/image/v2/D4D03AQGzpU6vWBJhug/profile-displayphoto-crop_800_800/B4DZ9Oapt_KYAI-/0/1783727038259?e=1789603200&v=beta&t=VkLma_ToKLWitEwWQDCjvolNXvu7rFCh2cT5TMDJDhw="
+        src="foto-cristiana.jpg"
         alt="Foto de Cristiana Cachoeira"
       />
     </div>
@@ -696,6 +702,7 @@
 <!-- SOBRE -->
 <section id="sobre" class="section-light">
   <div class="wrap">
+
     <div
       class="section-eyebrow"
       data-pt="Sobre mim"
@@ -713,6 +720,7 @@
     </h2>
 
     <div class="about-text reveal">
+
       <p
         data-pt="Sou carioca, nutricionista de formação pela UFRJ, onde também curso pós-graduação em Nutrição Clínica. Atualmente também estou em formação em Psicanálise e Neuronutrição, e sou residente da Residência Multiprofissional em Saúde Mental do HUSF/SMS-SP, em São Paulo."
         data-en="I'm from Rio de Janeiro, a nutritionist by training from UFRJ, where I'm also pursuing a postgraduate degree in Clinical Nutrition. I'm currently also training in Psychoanalysis and Neuronutrition, and I'm a resident in the Multiprofessional Residency in Mental Health at HUSF/SMS-SP, in São Paulo."
@@ -742,6 +750,7 @@
         Aqui você vai ver um pouco do que eu faço na minha rotina de
         trabalho e aprendizados — entre a nutrição e o código.
       </p>
+
     </div>
   </div>
 </section>
@@ -749,6 +758,7 @@
 <!-- EXPERIENCIA -->
 <section id="experiencia" class="section-dark">
   <div class="wrap">
+
     <div
       class="section-eyebrow"
       data-pt="Trajetória"
@@ -766,6 +776,7 @@
     </h2>
 
     <div class="timeline">
+
       <div class="t-item reveal">
         <div
           class="t-role"
@@ -895,6 +906,7 @@
           Novo caminho de aprendizado, unindo tecnologia à área da saúde.
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -902,6 +914,7 @@
 <!-- PROJETOS -->
 <section id="projetos" class="section-light">
   <div class="wrap">
+
     <div
       class="section-eyebrow"
       data-pt="Trabalhos"
@@ -919,6 +932,7 @@
     </h2>
 
     <div class="project-card reveal">
+
       <div>
         <span class="project-tag">HTML · CSS · JS</span>
 
@@ -942,6 +956,7 @@
       </div>
 
       <div class="project-links">
+
         <a
           href="https://devcristiana.github.io/nutritional-calculator/"
           target="_blank"
@@ -963,6 +978,7 @@
         >
           Ver código
         </a>
+
       </div>
     </div>
   </div>
@@ -971,7 +987,9 @@
 <!-- CONTATO -->
 <section id="contato" class="section-dark">
   <div class="wrap">
+
     <div class="contact-box reveal">
+
       <h2
         data-pt="Vamos conversar?"
         data-en="Let's talk?"
@@ -997,6 +1015,7 @@
       >
         Falar no LinkedIn
       </a>
+
     </div>
   </div>
 </section>
@@ -1025,7 +1044,10 @@
   function applyLang(lang) {
     document.querySelectorAll('[data-pt]').forEach((el) => {
       const value = lang === 'en' ? el.dataset.en : el.dataset.pt;
-      if (value !== undefined) el.innerHTML = value;
+
+      if (value !== undefined) {
+        el.innerHTML = value;
+      }
     });
 
     document.querySelectorAll('.lang-switch button').forEach((b) => {
@@ -1054,4 +1076,3 @@
 
 </body>
 </html>
-```
