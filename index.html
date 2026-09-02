@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Cristiana Cachoeira — Portfólio</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%228%22%20fill%3D%22%238B5CF6%22/%3E%3Ctext%20x%3D%2216%22%20y%3D%2221%22%20font-family%3D%22monospace%22%20font-size%3D%2212%22%20font-weight%3D%22700%22%20fill%3D%22%2315121F%22%20text-anchor%3D%22middle%22%3E%26lt%3B/%26gt%3B%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&family=Work+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -222,6 +223,7 @@
   }
 
   /* PROJETOS */
+  .project-list { display: flex; flex-direction: column; gap: 18px; }
   .project-card {
     background: var(--beige-card);
     border: 1px solid var(--line);
@@ -439,21 +441,41 @@
 <section id="projetos" class="section-light">
   <div class="wrap">
     <h2 class="section-heading" data-pt="Projetos" data-en="Projects">Projetos</h2>
-    <div class="project-card reveal">
-      <div>
-        <span class="project-tag">HTML · CSS · JS</span>
-        <h3 class="project-name" data-pt="Calculadora Nutricional" data-en="Nutrition Calculator">Calculadora Nutricional</h3>
-        <p class="project-desc"
-           data-pt="Calcula TMB, gasto calórico total (TDEE), IMC e sugestão de distribuição de macros, usando a fórmula de Mifflin-St Jeor. Meu primeiro projeto de programação, do zero até publicado."
-           data-en="Calculates BMR, total energy expenditure (TDEE), BMI, and a suggested macro breakdown, using the Mifflin-St Jeor formula. My first programming project, from scratch to published.">
-          Calcula TMB, gasto calórico total (TDEE), IMC e sugestão de
-          distribuição de macros, usando a fórmula de Mifflin-St Jeor.
-          Meu primeiro projeto de programação, do zero até publicado.
-        </p>
+    <div class="project-list">
+      <div class="project-card reveal">
+        <div>
+          <span class="project-tag">HTML · CSS · JS</span>
+          <h3 class="project-name" data-pt="Calculadora Nutricional" data-en="Nutrition Calculator">Calculadora Nutricional</h3>
+          <p class="project-desc"
+             data-pt="Calcula TMB, gasto calórico total (TDEE), IMC e sugestão de distribuição de macros, usando a fórmula de Mifflin-St Jeor. Meu primeiro projeto de programação, do zero até publicado."
+             data-en="Calculates BMR, total energy expenditure (TDEE), BMI, and a suggested macro breakdown, using the Mifflin-St Jeor formula. My first programming project, from scratch to published.">
+            Calcula TMB, gasto calórico total (TDEE), IMC e sugestão de
+            distribuição de macros, usando a fórmula de Mifflin-St Jeor.
+            Meu primeiro projeto de programação, do zero até publicado.
+          </p>
+        </div>
+        <div class="project-links">
+          <a href="https://devcristiana.github.io/nutritional-calculator/" target="_blank" rel="noopener" class="btn btn-primary" data-pt="Ver calculadora" data-en="View calculator">Ver calculadora</a>
+          <a href="https://github.com/devcristiana/nutritional-calculator" target="_blank" rel="noopener" class="btn btn-outline" data-pt="Ver código" data-en="View code">Ver código</a>
+        </div>
       </div>
-      <div class="project-links">
-        <a href="https://devcristiana.github.io/nutritional-calculator/" target="_blank" rel="noopener" class="btn btn-primary" data-pt="Ver calculadora" data-en="View calculator">Ver calculadora</a>
-        <a href="https://github.com/devcristiana/nutritional-calculator" target="_blank" rel="noopener" class="btn btn-outline" data-pt="Ver código" data-en="View code">Ver código</a>
+
+      <div class="project-card reveal">
+        <div>
+          <span class="project-tag">HTML · CSS · JS</span>
+          <h3 class="project-name" data-pt="Planilha Financeira" data-en="Financial Planner">Planilha Financeira</h3>
+          <p class="project-desc"
+             data-pt="Organiza renda e despesas mensais, calcula o saldo do mês e mostra a porcentagem da renda já gasta, tudo direto no navegador."
+             data-en="Organizes monthly income and expenses, calculates the month's balance, and shows the percentage of income already spent, all directly in the browser.">
+            Organiza renda e despesas mensais, calcula o saldo do mês e
+            mostra a porcentagem da renda já gasta, tudo direto no
+            navegador.
+          </p>
+        </div>
+        <div class="project-links">
+          <a href="https://devcristiana.github.io/financial-planning/" target="_blank" rel="noopener" class="btn btn-primary" data-pt="Ver planilha" data-en="View planner">Ver planilha</a>
+          <a href="https://github.com/devcristiana/financial-planning" target="_blank" rel="noopener" class="btn btn-outline" data-pt="Ver código" data-en="View code">Ver código</a>
+        </div>
       </div>
     </div>
   </div>
